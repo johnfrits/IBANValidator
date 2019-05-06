@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.421
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IBANValidator", "IBANValidator\IBANValidator.csproj", "{297DE81E-05EC-4BFD-B4DE-24446E4AF9B1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{297DE81E-05EC-4BFD-B4DE-24446E4AF9B1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{297DE81E-05EC-4BFD-B4DE-24446E4AF9B1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{297DE81E-05EC-4BFD-B4DE-24446E4AF9B1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{297DE81E-05EC-4BFD-B4DE-24446E4AF9B1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E43859B4-D91E-4892-A6EF-FD20300A6193}
+	EndGlobalSection
+EndGlobal
