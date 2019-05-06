@@ -29,7 +29,7 @@ namespace IBANValidator
     }
 
     /// <summary>
-    /// 
+    /// Class for IBAN Validate
     /// </summary>
     class IBANValidate
     {
@@ -38,7 +38,7 @@ namespace IBANValidator
         private static string Structure { get; set; }
 
         /// <summary>
-        /// 
+        /// Enums for return results.
         /// </summary>
         public enum ValidationResult
         {
@@ -50,7 +50,7 @@ namespace IBANValidator
         public IBANValidate() { }
 
         /// <summary>
-        /// 
+        /// Main method for IBAN Validation
         /// </summary>
         /// <param name="iban"></param>
         /// <returns></returns>
@@ -75,7 +75,7 @@ namespace IBANValidator
         }
 
         /// <summary>
-        /// 
+        /// Calculates the MOD 97 10 of the passed IBAN as specified in ISO7064.
         /// </summary>
         /// <param name="iban"></param>
         /// <returns></returns>
@@ -95,7 +95,8 @@ namespace IBANValidator
         }
 
         /// <summary>
-        /// 
+        /// Prepare an IBAN for mod 97 computation by moving the first 4 chars to the end and transforming the letters to
+        /// numbers(A = 10, B = 11, ..., Z = 35), as specified in ISO13616.
         /// </summary>
         /// <param name="iban"></param>
         /// <returns></returns>
@@ -122,7 +123,10 @@ namespace IBANValidator
         }
 
         /// <summary>
-        /// 
+        /// Parse the BBAN structure used to configure each IBAN Specification and returns a matching regular expression.
+        /// A structure is composed of blocks of 3 characters (one letter and 2 digits). Each block represents
+        /// a logical group in the typical representation of the BBAN.For each group, the letter indicates which characters
+        /// are allowed in this group and the following 2-digits number tells the length of the group.
         /// </summary>
         /// <param name="structure"></param>
         /// <returns></returns>
@@ -161,7 +165,7 @@ namespace IBANValidator
     {
 
         /// <summary>
-        /// 
+        /// List of countries that are in IBAN registry
         /// </summary>
         public readonly List<IBANSpecificationModel> IBANSpecifications = new List<IBANSpecificationModel>()
         {
@@ -170,7 +174,7 @@ namespace IBANValidator
         };
 
         /// <summary>
-        /// 
+        /// Model
         /// </summary>
         public class IBANSpecificationModel
         {
