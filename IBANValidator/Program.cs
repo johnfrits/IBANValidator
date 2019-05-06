@@ -163,7 +163,6 @@ namespace IBANValidator
 
     class Specification
     {
-
         /// <summary>
         /// List of countries that are in IBAN registry
         /// </summary>
